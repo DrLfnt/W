@@ -1,0 +1,60 @@
+.section{
+	text-align:center;
+}
+
+
+/* Sections
+ * --------------------------------------- */
+ #section0,
+ #section1,
+ #section2,
+ #section3,
+ #section4,
+ .slide{
+	background-size: cover;
+ }
+ #section0{
+	background-image: url(../fullPage/00-palabras-desktop.jpg);
+ }
+ #section1{
+	background-image: url(../fullPage/01-palabras-mar-dektop.jpg);
+ }
+ #section2{
+	background-image: url(../fullPage/03-palabras-volcan-desktop.jpg);
+ }
+
+ #section3{
+	background-image: url(../fullPage/04-palabras-noche-dektop.jpg);
+ }
+ #section4{
+ 	background-image: url(../fullPage/05-palabras-perro-desktop.jpg);
+ }
+
+ @media (max-width: 768px) {
+	 #section0{
+		background-image: url(../fullPage/00-palabras-mobile.jpg);
+	 }
+	 #section1{
+		background-image: url(../fullPage/01-palabras-mar-mobile.jpg);
+	 }
+	 #section2{
+		background-image: url(../fullPage/03-palabras-volcan-mobile.jpg);
+	 }
+
+	 #section3{
+		background-image: url(../fullPage/04-palabras-noche-mobile.jpg);
+	 }
+	 #section4{
+		background-image: url(../fullPage/05-palabras-perro-mobile.jpg);
+	 }
+ }
+
+.section .bg-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    padding: 20px;
+    width: 100%;
+    color: #333;
+}
