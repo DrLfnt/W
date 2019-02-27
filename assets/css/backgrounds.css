@@ -1,0 +1,105 @@
+.section{
+	text-align:center;
+}
+/* Sections
+ * --------------------------------------- */
+ #section0,
+ #section1,
+ #section2,
+ #section3,
+ #section4,
+ #section5,
+ #section6,
+ #section7,
+ #section8,
+ #section9,
+ #section10,
+ #section11,
+ .slide{
+	background-size: cover;
+ }
+ #section0{
+	background-image: url(../img/palabras/desktop/00-palabras-desktop.jpg);
+ }
+ #section1{
+	background-image: url(../img/palabras/desktop/01-palabras-mar-desktop.jpg);
+ }
+ #section2{
+	background-image: url(../img/palabras/desktop/02-palabras-mariposa-desktop.jpg);
+ }
+ #section3{
+	background-image: url(../img/palabras/desktop/03-palabras-volcan-desktop.jpg);
+ }
+ #section4{
+ 	background-image: url(../img/palabras/desktop/04-palabras-noche-desktop.jpg);
+ }
+ #section5{
+	background-image: url(../img/palabras/desktop/05-palabras-perro-desktop.jpg);
+ }
+ #section6{
+	background-image: url(../img/palabras/desktop/06-palabras-mujer-desktop.jpg);
+ }
+ #section7{
+	background-image: url(../img/palabras/desktop/07-palabras-corazon-desktop.jpg);
+ }
+ #section8{
+	background-image: url(../img/palabras/desktop/08-palabras-sol-desktop.jpg);
+ }
+ #section9{
+ 	background-image: url(../img/palabras/desktop/09-palabras-lluvia-desktop.jpg);
+ }
+ #section10{
+ 	background-image: url(../img/palabras/desktop/10-palabras-familia-desktop.jpg);
+ }
+ #section11{
+ 	background-image: url(../img/palabras/desktop/11-palabras-abrazar-desktop.jpg);
+ }
+
+ @media (max-width: 768px) {
+	 #section0{
+		background-image: url(../img/palabras/mobile/00-palabras-mobile.jpg);
+	 }
+	 #section1{
+		background-image: url(../img/palabras/mobile/01-palabras-mar-mobile.jpg);
+	 }
+	 #section2{
+		background-image: url(../img/palabras/mobile/02-palabras-mariposa-mobile.jpg);
+	 }
+	 #section3{
+		background-image: url(../img/palabras/mobile/03-palabras-volcan-mobile.jpg);
+	 }
+	 #section4{
+		background-image: url(../img/palabras/mobile/04-palabras-noche-mobile.jpg);
+	 }
+	 #section5{
+		background-image: url(../img/palabras/mobile/05-palabras-perro-mobile.jpg);
+	 }
+	 #section6{
+		background-image: url(../img/palabras/mobile/06-palabras-mujer-mobile.jpg);
+	 }
+	 #section7{
+		background-image: url(../img/palabras/mobile/07-palabras-corazon-mobile.jpg);
+	 }
+	 #section8{
+		background-image: url(../img/palabras/mobile/08-palabras-sol-mobile.jpg);
+	 }
+	 #section9{
+		background-image: url(../img/palabras/mobile/09-palabras-lluvia-mobile.jpg);
+	 }
+	 #section10{
+		background-image: url(../img/palabras/mobile/10-palabras-familia-mobile.jpg);
+	 }
+	 #section11{
+		background-image: url(../img/palabras/mobile/11-palabras-abrazar-mobile.jpg);
+	 }
+ }
+
+.section .bg-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    padding: 20px;
+    width: 100%;
+    color: #333;
+}
