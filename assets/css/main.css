@@ -1,96 +1,90 @@
-body{
-                    font-family: 'Economica', sans-serif;
-                    font-size: 1rem 14px;
-                }
-
-                .CalltoActionMobile{
-                    width: 40px;
-                    margin-top: 30px;
-                }
-                .CalltoAction{
-                    width: 100px;
-                    margin: 5px;
-
-                }
-                .count{
-                    position: absolute;
-                    top: -80px;
-                    right: 20px;
-                    font-size: 48px!important;
-                }
-                .homeText{
-                    line-height: 1;
-                    text-align: -webkit-left;
-                }
-                .homeText h1{
-                    font-size: 27px !important;
-                    font-weight: 600;
-                }
-
-                .homeText p{
-                    font-size: 20px !important;
-                }
-                .scroll{
-                    width: 50px;
-                }
-                .palabra{
-                    /* position: absolute;
-                    top: 60%;
-                    left: 42%; */
-                    z-index: 5;
-                    border-radius: 2px;
-                    padding: 20px;
-                    margin-top: 30%;
-                    background-color: rgba(0, 0, 0, 0.35);
-                    color:white;
-                }
-                .palabra h1 {
-                    color:white;
-                }
-                .footer {
-                    position: fixed;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    color: white;
-                    text-align: right;
-                }
-
-                input, textarea { opacity:0.8;}
-                #navbar-collapse-1 { font-size: medium;}
-                .section.table { margin: 0;}
-                .controlArrow { opacity: 0.5;}
-                .controlArrow:hover { opacity: 1;}
-
-                @media (max-width: 768px) {
-                    .count{
-
-                        font-size: 36px!important;
-                    }
-                    .homeText{
-                        position:absolute;
-                        top:90px;
-                    }
-                    .homeText h1{
-                        font-size: 16px !important;
-                        font-weight: 600;
-                    }
-
-                    .homeText p{
-                        font-size: 13px !important;
-                    }
-
-                        .container { margin:0 10px;}
-                        h1{ font-size: 26px !important; }
-                        p, label{ font-size: 16px !important; }
-                }
-
-                @media  (min-width: 769px) and (max-width: 980px) {
-                        h1{ font-size: 34px !important; }
-                        p, label{ font-size: 20px !important; }
-                }
-
-                @media (min-width: 981px) {
-                        h1{ font-size: 48px !important; }
-                        p, label{ font-size: 24px !important; }
-                }
+body {
+	font-family: 'Economica', sans-serif;
+	font-size: 1rem 14px;
+}
+.CalltoActionMobile{
+	width: 40px;
+	margin-top: 30px;
+}
+.CalltoAction{
+	width: 100px;
+	margin: 5px;
+}
+.count{
+	position: absolute;
+	top: -80px;
+	right: 20px;
+	font-size: 48px!important;
+}
+.homeText{
+	line-height: 1;
+	text-align: -webkit-left;
+}
+.homeText h1{
+	font-size: 27px !important;
+	font-weight: 600;
+}
+.homeText p{
+	font-size: 20px !important;
+}
+.scroll{
+	width: 60px;
+}
+.scrollAction{
+	position: fixed;
+	bottom: 10px;
+}
+.palabra{
+	/* position: absolute;
+	top: 60%;
+	left: 42%; */
+	z-index: 5;
+	border-radius: 2px;
+	padding: 20px;
+	margin-top: 30%;
+	background-color: rgba(0, 0, 0, 0.35);
+	color:white;
+}
+.palabra h1 {
+	color:white;
+}
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: right;
+}
+input, textarea { opacity:0.8;}
+#navbar-collapse-1 { font-size: medium;}
+.section.table { margin: 0;}
+.controlArrow { opacity: 0.5;}
+.controlArrow:hover { opacity: 1;}
+@media (max-width: 768px) {
+	.count{
+		font-size: 36px!important;
+	}
+	.homeText{
+		position:absolute;
+		top:90px;
+	}
+	.homeText h1{
+		font-size: 16px !important;
+		font-weight: 600;
+	}
+	.homeText p{
+		font-size: 13px !important;
+	}
+	.container { margin:0 10px;}
+	h1{ font-size: 26px !important; }
+	p, label{ font-size: 16px !important; }
+}
+@media  (min-width: 769px) and (max-width: 980px) {
+	h1{ font-size: 34px !important; }
+	p, label{ font-size: 20px !important; }
+}
+@media (min-width: 981px) {
+	h1{ font-size: 48px !important; }
+	p, label{ font-size: 24px !important; }
+}
