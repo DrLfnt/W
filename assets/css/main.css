@@ -15,29 +15,29 @@ body {
 	max-width:500px;
 	height:auto;
 }
-.CalltoActionMobile{
+.CalltoActionMobile {
 	width: 40px;
 	margin-top: 30px;
 }
-.CalltoAction{
+.CalltoAction {
 	width: 100px;
 	margin: 5px;
 }
-.count{
+.count {
 	position: absolute;
 	top: -80px;
 	right: 20px;
 	font-size: 48px!important;
 }
-.homeText{
+.homeText {
 	line-height: 1;
 	text-align: -webkit-left;
 }
-.homeText h1{
+.homeText h1 {
 	font-size: 27px !important;
 	font-weight: 600;
 }
-.homeText p{
+.homeText p {
 	font-size: 20px !important;
 }
 .palabraUppercase {
@@ -49,14 +49,14 @@ body {
 .shareRight {
 	text-align: -webkit-right;
 }
-.scroll{
+.scroll {
 	width: 60px;
 }
-.scrollAction{
+.scrollAction {
 	position: fixed;
 	bottom: 10px;
 }
-.palabra{
+.palabra {
 	/* position: absolute;
 	top: 60%;
 	left: 42%; */
@@ -78,35 +78,59 @@ body {
 	color: white;
 	text-align: right;
 }
-input, textarea { opacity:0.8;}
-#navbar-collapse-1 { font-size: medium;}
-.section.table { margin: 0;}
-.controlArrow { opacity: 0.5;}
-.controlArrow:hover { opacity: 1;}
+input, textarea {
+	opacity:0.8;
+}
+#navbar-collapse-1 {
+	font-size: medium;
+}
+.section.table {
+	margin: 0;
+}
+.controlArrow {
+	opacity: 0.5;
+}
+.controlArrow:hover {
+	opacity: 1;
+}
 @media (max-width: 768px) {
-	.count{
+	.count {
 		font-size: 36px!important;
 	}
-	.homeText{
+	.homeText {
 		position:absolute;
 		top:90px;
 	}
-	.homeText h1{
+	.homeText h1 {
 		font-size: 16px !important;
 		font-weight: 600;
 	}
-	.homeText p{
+	.homeText p {
 		font-size: 13px !important;
 	}
-	.container { margin:0 10px;}
-	h1{ font-size: 26px !important; }
-	p, label{ font-size: 16px !important; }
+	.container {
+		margin:0 10px;
+	}
+	h1 {
+		font-size: 26px !important;
+	}
+	p, label {
+		font-size: 16px !important;
+	}
 }
 @media  (min-width: 769px) and (max-width: 980px) {
-	h1{ font-size: 34px !important; }
-	p, label{ font-size: 20px !important; }
+	h1 {
+		font-size: 34px !important;
+	}
+	p, label {
+		font-size: 20px !important;
+	}
 }
 @media (min-width: 981px) {
-	h1{ font-size: 48px !important; }
-	p, label{ font-size: 24px !important; }
+	h1 {
+		font-size: 48px !important;
+	}
+	p, label {
+		font-size: 24px !important;
+	}
 }
