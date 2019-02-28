@@ -1,6 +1,19 @@
 body {
-	font-family: 'Economica', sans-serif;
+	font-family: 'Telefonica', sans-serif;
 	font-size: 1rem 14px;
+}
+.navLenguas {
+	background:none;
+	border: none;
+}
+.linkLogo {
+	position: fixed;
+	left: -15px;
+	top: -15px;
+}
+.logoImg {
+	max-width:500px;
+	height:auto;
 }
 .CalltoActionMobile{
 	width: 40px;
@@ -26,6 +39,15 @@ body {
 }
 .homeText p{
 	font-size: 20px !important;
+}
+.palabraUppercase {
+	text-transform:uppercase;
+}
+.shareCenter {
+	text-align: -webkit-center;
+}
+.shareRight {
+	text-align: -webkit-right;
 }
 .scroll{
 	width: 60px;
