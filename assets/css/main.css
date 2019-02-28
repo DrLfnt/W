@@ -2,6 +2,14 @@ body {
 	font-family: 'Telefonica', sans-serif;
 	font-size: 1rem 14px;
 }
+/*.CalltoAction:hover {
+    -webkit-animation: fadeOutRight 1s;
+    animation: fadeOutRight 1s;
+}
+.CalltoActionMobile:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}*/
 .navLenguas {
 	background:none;
 	border: none;
