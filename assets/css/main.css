@@ -64,6 +64,10 @@ body {
 	position: fixed;
 	bottom: 10px;
 }
+.fingerSwipe {
+    position: absolute;
+    bottom: 50px;
+}
 .palabra {
 	/* position: absolute;
 	top: 60%;
@@ -103,7 +107,9 @@ input, textarea {
 }
 @media (max-width: 768px) {
 	.count {
-		font-size: 36px!important;
+		font-size: 35px!important;
+		position: absolute;
+		top: -400px;
 	}
 	.homeText {
 		position:absolute;
