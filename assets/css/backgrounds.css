@@ -15,6 +15,15 @@
  #section9,
  #section10,
  #section11,
+ #section12,
+ #section13,
+ #section14,
+ #section15,
+ #section16,
+ #section17,
+ #section18,
+ #section19,
+ #section20,
  .slide{
 	background-size: cover;
  }
@@ -54,6 +63,33 @@
  #section11{
  	background-image: url(../img/palabras/desktop/11-palabras-abrazar-desktop.jpg);
  }
+ #section12{
+ 	background-image: url(../img/palabras/desktop/12-palabras-agua-desktop.jpg);
+ }
+ #section13{
+ 	background-image: url(../img/palabras/desktop/13-palabras-casa-desktop.jpg);
+ }
+ #section14{
+ 	background-image: url(../img/palabras/desktop/14-palabras-colibri-desktop.jpg);
+ }
+ #section15{
+ 	background-image: url(../img/palabras/desktop/15-palabras-chocolate-desktop.jpg);
+ }
+ #section16{
+ 	background-image: url(../img/palabras/desktop/16-palabras-beso-desktop.jpg);
+ }
+ #section17{
+ 	background-image: url(../img/palabras/desktop/17-palabras-reir-desktop.jpg);
+ }
+ #section18{
+ 	background-image: url(../img/palabras/desktop/18-palabras-nube-desktop.jpg);
+ }
+ #section19{
+ 	background-image: url(../img/palabras/desktop/19-palabras-flores-desktop.jpg);
+ }
+ #section20{
+ 	background-image: url(../img/palabras/desktop/20-palabras-senal-desktop.jpg);
+ }
 
  @media (max-width: 768px) {
 	 #section0{
@@ -91,6 +127,33 @@
 	 }
 	 #section11{
 		background-image: url(../img/palabras/mobile/11-palabras-abrazar-mobile.jpg);
+	 }
+	 #section12{
+		background-image: url(../img/palabras/mobile/12-palabras-agua-mobile.jpg);
+	 }
+	 #section13{
+		background-image: url(../img/palabras/mobile/13-palabras-casa-mobile.jpg);
+	 }
+	 #section14{
+		background-image: url(../img/palabras/mobile/14-palabras-colibri-mobile.jpg);
+	 }
+	 #section15{
+		background-image: url(../img/palabras/mobile/15-palabras-chocolate-mobile.jpg);
+	 }
+	 #section16{
+		background-image: url(../img/palabras/mobile/16-palabras-beso-mobile.jpg);
+	 }
+	 #section17{
+		background-image: url(../img/palabras/mobile/17-palabras-reir-mobile.jpg);
+	 }
+	 #section18{
+		background-image: url(../img/palabras/mobile/18-palabras-nube-mobile.jpg);
+	 }
+	 #section19{
+		background-image: url(../img/palabras/mobile/19-palabras-flores-mobile.jpg);
+	 }
+	 #section20{
+		background-image: url(../img/palabras/mobile/20-palabras-senal-mobile.jpg);
 	 }
  }
 
