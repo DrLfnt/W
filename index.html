@@ -90,10 +90,32 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.dropdown-toggle').dropdown();
+			var $isAnimatedZoomInUpSlow = $('.isAnimatedZoomInUpSlow');
+			var $isAnimatedDelay1sFadeInUpBigSlow = $('.isAnimatedDelay1sFadeInUpBigSlow');
+			var $isAnimatedDelay1sFadeInUp = $('.isAnimatedDelay1sFadeInUp');
+			var $isAnimatedDelay1sFadeInRight = $('.isAnimatedDelay1sFadeInRight');
 			var pepe = $.fn.fullpage({
 				slidesColor: ['#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0'], // Bootstrap
 				anchors: ['lenguas', 'Ailuikatl', 'Papalotl', 'Tletepet', 'Pilotl', 'Itzcuintli', 'Cihuatl', 'Yolotli', 'Tonatiuh', 'Quiyahuitl', 'Chantlacahuan', 'Napaloa', 'Chipahuacatl', 'Chantin', 'Hutzilli', 'Xocolatl', 'Tempitzoliztli', 'Huetzca', 'Mixtli', 'Xochimeh', 'Machiyotl'],
-				menu: '#menu'
+				menu: '#menu',
+				onLeave: function(index, nextIndex, direction) {
+					$isAnimatedZoomInUpSlow.removeClass('animated zoomInUp slow');
+					$isAnimatedDelay1sFadeInUpBigSlow.removeClass('animated delay-1s fadeInUpBig slow');
+					$isAnimatedDelay1sFadeInUp.removeClass('animated delay-1s fadeInUp');
+					$isAnimatedDelay1sFadeInRight.removeClass('animated delay-1s fadeInRight');
+					setTimeout(function() {
+			        $isAnimatedZoomInUpSlow.addClass('animated zoomInUp slow');
+			    }, 10);
+					setTimeout(function() {
+			        $isAnimatedDelay1sFadeInUpBigSlow.addClass('animated delay-1s fadeInUpBig slow');
+			    }, 10);
+					setTimeout(function() {
+			        $isAnimatedDelay1sFadeInUp.addClass('animated delay-1s fadeInUp');
+			    }, 10);
+					setTimeout(function() {
+			        $isAnimatedDelay1sFadeInRight.addClass('animated delay-1s fadeInRight');
+			    }, 10);
+				}
 			});
 		});
 	</script>
@@ -137,27 +159,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Ailuikatl “Mar”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp isAnimatedDelay1sFadeInUp">
 							“Los náhuatl adoraban el océano, era el destino de las almas cuando morían”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FAiluikatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FAiluikatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -165,24 +187,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						01/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FAiluikatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FAiluikatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -196,27 +218,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Papalotl “Mariposa”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Son las encargadas de fertilizar la tierra en cada uno de sus vuelos”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FPapalotl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FPapalotl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -224,24 +246,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						02/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FPapalotl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FPapalotl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -255,27 +277,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Tletepet “Volcán”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Dentro de la montaña humeante se encuentra un guerrero listo para defender a su gente con furia”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FTletepet.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FTletepet.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -283,24 +305,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						03/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FTletepet.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FTletepet.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -314,27 +336,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Pilotl “Noche”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Periodo obscuro y perfecto para contemplar el cielo y ver el brillo de todas las estrellas”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FPilotl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FPilotl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -342,24 +364,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						04/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FPilotl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FPilotl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -373,27 +395,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Itzcuintli “Perro”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Compañero animal que muestra lealtad y fidelidad sin importar las condiciones en las que su dueño se encuentre”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FItzcuintli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FItzcuintli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -401,24 +423,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						05/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FItzcuintli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FItzcuintli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -432,27 +454,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Cihuatl “Mujer”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Compañera ideal del hombre en la tierra, Inspiración total por su fuerza, capacidad y belleza”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FCihuatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FCihuatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -460,24 +482,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						06/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FCihuatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FCihuatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -491,27 +513,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Yolotli “Corazón”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Órgano que da fuerza e impulsa a las almas a hacer cosas que nunca imaginaron”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FYolotli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FYolotli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -519,24 +541,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						07/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FYolotli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FYolotli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -550,27 +572,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Tonatiuh “Sol”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Estrella que brilla, cobija e ilumina los días de todas las personas que habitan en la madre tierra”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FTonatiuh.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FTonatiuh.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -578,24 +600,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						08/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FTonatiuh.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FTonatiuh.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -609,27 +631,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Quiyahuitl “Lluvia”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Agua que cae del cielo, es indispensable para que el planeta esté vivo y en equilibrio”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FQuiyahuitl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FQuiyahuitl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -637,24 +659,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						09/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FQuiyahuitl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FQuiyahuitl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -668,27 +690,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Chantlacahuan “Familia”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Grupo de personas que se aman, protegen y cuidan entre ellos”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FChantlacahuan.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FChantlacahuan.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -696,24 +718,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						10/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FChantlacahuan.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FChantlacahuan.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -727,27 +749,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Napaloa “Abrazar”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Expresión de cariño y consuelo entre las personas, gesto que se hace con las manos y da seguridad”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FNapaloa.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FNapaloa.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -755,24 +777,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						11/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FNapaloa.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FNapaloa.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -786,27 +808,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Chipahuacatl “Agua”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Líquido vital para cualquier ser vivo que pertenezcaa la madre naturaleza”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FChipahuacatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FChipahuacatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -814,24 +836,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						12/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FChipahuacatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FChipahuacatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -845,27 +867,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Chantin “Casa”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Lugar donde viven los seres queridos que tenemos, refugio único lleno de amor, confianza, felicidad y armonía”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FChantin.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FChantin.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -873,24 +895,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						13/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FChantin.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FChantin.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -904,27 +926,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Hutzilli “Colibrí”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Pequeña ave de plumaje multicolor, rápida y mística, es conocida como un mensajero y guardían del tiempo”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FHutzilli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FHutzilli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -932,24 +954,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						14/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FHutzilli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FHutzilli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -963,27 +985,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Xocolatl “Chocolate”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Manjar delcioso que se obtiene al mezclar cacao, azucar y especias, se considera un alimento para los dioses”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FXocolatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FXocolatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -991,24 +1013,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						15/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FXocolatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FXocolatl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -1022,27 +1044,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Tempitzoliztli “Beso”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Gesto hecho con los labios que cominica unión, afecto, amor y confianza entre las personas”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FTempitzoliztli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FTempitzoliztli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -1050,24 +1072,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						16/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FTempitzoliztli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FTempitzoliztli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -1081,27 +1103,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Huetzca “Reír”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“La mejor expresión que la gente puede utilizar para comunicar alegría, placer y felicidad”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FHuetzca.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FHuetzca.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -1109,24 +1131,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						17/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FHuetzca.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FHuetzca.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -1140,27 +1162,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Mixtli “Nube”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Estructuras de vapor a las que la imaginación les busca formas para divertirnos un día cualquiera”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FMixtli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FMixtli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -1168,24 +1190,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						18/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FMixtli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FMixtli.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -1199,27 +1221,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Xochimeh  “Flores”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Elemento natural que adorna la vida diaria con sus colores y aroma, regalo habitual que reciben las mujeres”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FXochimeh.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FXochimeh.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -1227,24 +1249,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						19/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FXochimeh.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FXochimeh.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
@@ -1258,27 +1280,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<div class="palabra">
-						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase animated zoomInUp slow">
+						<h1 class="h1Palabra telefonicaCapRegular palabraUppercase isAnimatedZoomInUpSlow">
 							Machiyotl  “Señal”
 						</h1>
-						<p class="pSignificado telefonicaRegularItalic animated delay-1s fadeInUp">
+						<p class="pSignificado telefonicaRegularItalic isAnimatedDelay1sFadeInUp">
 							“Onda que reciben los dispositivos móviles que hace posible la comunicación entre personas en lugares distintos”.
 						</p>
 						<div class="row">
 							<div class="col-xs-1"></div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto-mobile.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-4 shareCenter">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FMachiyotl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto-mobile.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 col-xs-3 shareCenter">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FMachiyotl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoActionMobile visible-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto-mobile.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoActionMobile visible-xs">
 								</a>
 							</div>
 							<div class="col-xs-1"></div>
@@ -1286,24 +1308,24 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<p class="count animated delay-1s fadeInRight">
+					<p class="count isAnimatedDelay1sFadeInRight">
 						20/50
 					</p>
 					<div class="shared">
 						<div class="row">
 							<div class="col-sm-12 shareRight">
 								<a href="https://tienda.movistar.com.mx/recarga-publica" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-recarga-icono-texto.png" alt="Recarga" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://www.facebook.com/dialog/feed?app_id=295478207634691&display=popup&link=https%3A%2F%2Fsalvaunalengua.com%2F%2FMachiyotl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-facebook-icono-texto.png" alt="Facebook" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 							<div class="col-sm-12 shareRight">
 								<a href="https://twitter.com/share?url=https%3A%2F%2Fsalvaunalengua.com%2F%2FMachiyotl.html" class="hvr-float-shadow">
-									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="animated delay-1s fadeInUpBig CalltoAction hidden-xs">
+									<img src="./assets/img/permanents/compartir-twitter-icono-texto.png" alt="Twitter" class="isAnimatedDelay1sFadeInUpBig CalltoAction hidden-xs">
 								</a>
 							</div>
 						</div>
