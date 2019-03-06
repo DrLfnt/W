@@ -1,49 +1,4 @@
 @font-face{ 
-	font-family: 'Telefonica-Bold';
-	src: url('../fonts/Telefonica/Bold/TelefonicaWeb-Bold.eot');
-	src: url('../fonts/Telefonica/Bold/TelefonicaWeb-Bold.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/Telefonica/Bold/TelefonicaWeb-Bold.woff') format('woff'),
-	     url('../fonts/Telefonica/Bold/TelefonicaWeb-Bold.woff2') format('woff'),
-	     url('../fonts/Telefonica/Bold/TelefonicaWeb-Bold.ttf') format('truetype'),
-	     url('../fonts/Telefonica/Bold/TelefonicaWeb-Bold.svg#webfont') format('svg');
-}
-@font-face{ 
-	font-family: 'Telefonica-ExtraLight';
-	src: url('../fonts/Telefonica/ExtraLight/TelefonicaWeb-ExtraLight.eot');
-	src: url('../fonts/Telefonica/ExtraLight/TelefonicaWeb-ExtraLight.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/Telefonica/ExtraLight/TelefonicaWeb-ExtraLight.woff') format('woff'),
-	     url('../fonts/Telefonica/ExtraLight/TelefonicaWeb-ExtraLight.woff2') format('woff'),
-	     url('../fonts/Telefonica/ExtraLight/TelefonicaWeb-ExtraLight.ttf') format('truetype'),
-	     url('../fonts/Telefonica/ExtraLight/TelefonicaWeb-ExtraLight.svg#webfont') format('svg');
-}
-@font-face{ 
-	font-family: 'Telefonica-Hand';
-	src: url('../fonts/Telefonica/Hand/TelefonicaWeb-Hand.eot');
-	src: url('../fonts/Telefonica/Hand/TelefonicaWeb-Hand.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/Telefonica/Hand/TelefonicaWeb-Hand.woff') format('woff'),
-	     url('../fonts/Telefonica/Hand/TelefonicaWeb-Hand.woff2') format('woff'),
-	     url('../fonts/Telefonica/Hand/TelefonicaWeb-Hand.ttf') format('truetype'),
-	     url('../fonts/Telefonica/Hand/TelefonicaWeb-Hand.svg#webfont') format('svg');
-}
-@font-face{ 
-	font-family: 'Telefonica-Light';
-	src: url('../fonts/Telefonica/Light/TelefonicaWeb-Light.eot');
-	src: url('../fonts/Telefonica/Light/TelefonicaWeb-Light.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/Telefonica/Light/TelefonicaWeb-Light.woff') format('woff'),
-	     url('../fonts/Telefonica/Light/TelefonicaWeb-Light.woff2') format('woff'),
-	     url('../fonts/Telefonica/Light/TelefonicaWeb-Light.ttf') format('truetype'),
-	     url('../fonts/Telefonica/Light/TelefonicaWeb-Light.svg#webfont') format('svg');
-}
-@font-face{ 
-	font-family: 'Telefonica-Regular';
-	src: url('../fonts/Telefonica/Regular/TelefonicaWeb-Regular.eot');
-	src: url('../fonts/Telefonica/Regular/TelefonicaWeb-Regular.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/Telefonica/Regular/TelefonicaWeb-Regular.woff') format('woff'),
-	     url('../fonts/Telefonica/Regular/TelefonicaWeb-Regular.woff2') format('woff'),
-	     url('../fonts/Telefonica/Regular/TelefonicaWeb-Regular.ttf') format('truetype'),
-	     url('../fonts/Telefonica/Regular/TelefonicaWeb-Regular.svg#webfont') format('svg');
-}
-@font-face{ 
 	font-family: 'Telefonica-Regular-Italic';
 	src: url('../fonts/Telefonica/RegularItalic/TelefonicaWeb-RegularItalic.eot');
 	src: url('../fonts/Telefonica/RegularItalic/TelefonicaWeb-RegularItalic.eot?#iefix') format('embedded-opentype'),
@@ -51,15 +6,6 @@
 	     url('../fonts/Telefonica/RegularItalic/TelefonicaWeb-RegularItalic.woff2') format('woff'),
 	     url('../fonts/Telefonica/RegularItalic/TelefonicaWeb-RegularItalic.ttf') format('truetype'),
 	     url('../fonts/Telefonica/RegularItalic/TelefonicaWeb-RegularItalic.svg#webfont') format('svg');
-}
-@font-face{ 
-	font-family: 'Telefonica-Cap';
-	src: url('../fonts/Telefonica/Cap/TelefonicaCapWeb-Regular.eot');
-	src: url('../fonts/Telefonica/Cap/TelefonicaCapWeb-Regular.eot?#iefix') format('embedded-opentype'),
-	     url('../fonts/Telefonica/Cap/TelefonicaCapWeb-Regular.woff') format('woff'),
-	     url('../fonts/Telefonica/Cap/TelefonicaCapWeb-Regular.woff2') format('woff'),
-	     url('../fonts/Telefonica/Cap/TelefonicaCapWeb-Regular.ttf') format('truetype'),
-	     url('../fonts/Telefonica/Cap/TelefonicaCapWeb-Regular.svg#webfont') format('svg');
 }
 @font-face{ 
 	font-family: 'Telefonica-Cap-Regular';
@@ -70,40 +16,15 @@
 	     url('../fonts/Telefonica/CapRegular/telefonicacap-regular-webfont.ttf') format('truetype'),
 	     url('../fonts/Telefonica/CapRegular/telefonicacap-regular-webfont.svg#webfont') format('svg');
 }
-
-body {
-	font-size: 1vw;
-}
-.telefonicaBold {
-	font-family: 'Telefonica-Bold', Arial, sans-serif !important;
-}
-.telefonicaExtraLight {
-	font-family: 'Telefonica-ExtraLight', Arial, sans-serif !important;
-}
-.telefonicaHand {
-	font-family: 'Telefonica-Hand', Arial, sans-serif !important;
-}
-.telefonicaLight {
-	font-family: 'Telefonica-Light', Arial, sans-serif !important;
-}
-.telefonicaRegular {
-	font-family: 'Telefonica-Regular', Arial, sans-serif !important;
+.telefonicaCapRegular {
+	font-family: 'Telefonica-Cap-Regular', Arial, sans-serif !important;
 }
 .telefonicaRegularItalic {
 	font-family: 'Telefonica-Regular-Italic', Arial, sans-serif !important;
 }
-.telefonicaCap {
-	font-family: 'Telefonica-Cap', Arial, sans-serif !important;
+body {
+	font-size: 1vw;
 }
-.telefonicaCapRegular {
-	font-family: 'Telefonica-Cap-Regular', Arial, sans-serif !important;
-}
-/*.h1Palabra {
-	font-size: 3vw !important;
-}
-.pSignificado {
-	font-size: 2vw !important;
-}*/
 .navLenguas {
 	background:none;
 	border: none;
