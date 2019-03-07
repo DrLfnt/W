@@ -22,7 +22,7 @@ body {
     font-size: 1vw
 }
 
-#myVideo {
+#myVideo, #myVideoMov {
     position: fixed;
     right: 0;
     bottom: 0;
