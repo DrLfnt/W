@@ -98,7 +98,7 @@
 
 
 body {
-    font-size: 1vw
+    font-size: 1vw;
 }
 
 #myVideo, #myVideoMov {
@@ -117,7 +117,7 @@ body {
     color: #00a9e0;
 }
 
-section0copyp {
+.section0copyp {
     font-size: 2em !important;
     padding-right: 1em !important;
 }
