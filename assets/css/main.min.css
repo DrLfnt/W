@@ -1,4 +1,4 @@
-@font-face{ 
+@font-face{
     font-family: 'Telefonica-Bold';
     src: url('../fonts/Telefonica/Bold/TelefonicaWeb-Bold.eot');
     src: url('../fonts/Telefonica/Bold/TelefonicaWeb-Bold.eot?#iefix') format('embedded-opentype'),
@@ -7,7 +7,7 @@
          url('../fonts/Telefonica/Bold/TelefonicaWeb-Bold.ttf') format('truetype'),
          url('../fonts/Telefonica/Bold/TelefonicaWeb-Bold.svg#webfont') format('svg');
 }
-@font-face{ 
+@font-face{
     font-family: 'Telefonica-ExtraLight';
     src: url('../fonts/Telefonica/ExtraLight/TelefonicaWeb-ExtraLight.eot');
     src: url('../fonts/Telefonica/ExtraLight/TelefonicaWeb-ExtraLight.eot?#iefix') format('embedded-opentype'),
@@ -16,7 +16,7 @@
          url('../fonts/Telefonica/ExtraLight/TelefonicaWeb-ExtraLight.ttf') format('truetype'),
          url('../fonts/Telefonica/ExtraLight/TelefonicaWeb-ExtraLight.svg#webfont') format('svg');
 }
-@font-face{ 
+@font-face{
     font-family: 'Telefonica-Hand';
     src: url('../fonts/Telefonica/Hand/TelefonicaWeb-Hand.eot');
     src: url('../fonts/Telefonica/Hand/TelefonicaWeb-Hand.eot?#iefix') format('embedded-opentype'),
@@ -25,7 +25,7 @@
          url('../fonts/Telefonica/Hand/TelefonicaWeb-Hand.ttf') format('truetype'),
          url('../fonts/Telefonica/Hand/TelefonicaWeb-Hand.svg#webfont') format('svg');
 }
-@font-face{ 
+@font-face{
     font-family: 'Telefonica-Light';
     src: url('../fonts/Telefonica/Light/TelefonicaWeb-Light.eot');
     src: url('../fonts/Telefonica/Light/TelefonicaWeb-Light.eot?#iefix') format('embedded-opentype'),
@@ -34,7 +34,7 @@
          url('../fonts/Telefonica/Light/TelefonicaWeb-Light.ttf') format('truetype'),
          url('../fonts/Telefonica/Light/TelefonicaWeb-Light.svg#webfont') format('svg');
 }
-@font-face{ 
+@font-face{
     font-family: 'Telefonica-Regular';
     src: url('../fonts/Telefonica/Regular/TelefonicaWeb-Regular.eot');
     src: url('../fonts/Telefonica/Regular/TelefonicaWeb-Regular.eot?#iefix') format('embedded-opentype'),
@@ -43,7 +43,7 @@
          url('../fonts/Telefonica/Regular/TelefonicaWeb-Regular.ttf') format('truetype'),
          url('../fonts/Telefonica/Regular/TelefonicaWeb-Regular.svg#webfont') format('svg');
 }
-@font-face{ 
+@font-face{
     font-family: 'Telefonica-Regular-Italic';
     src: url('../fonts/Telefonica/RegularItalic/TelefonicaWeb-RegularItalic.eot');
     src: url('../fonts/Telefonica/RegularItalic/TelefonicaWeb-RegularItalic.eot?#iefix') format('embedded-opentype'),
@@ -52,7 +52,7 @@
          url('../fonts/Telefonica/RegularItalic/TelefonicaWeb-RegularItalic.ttf') format('truetype'),
          url('../fonts/Telefonica/RegularItalic/TelefonicaWeb-RegularItalic.svg#webfont') format('svg');
 }
-@font-face{ 
+@font-face{
     font-family: 'Telefonica-Cap';
     src: url('../fonts/Telefonica/Cap/TelefonicaCapWeb-Regular.eot');
     src: url('../fonts/Telefonica/Cap/TelefonicaCapWeb-Regular.eot?#iefix') format('embedded-opentype'),
@@ -61,7 +61,7 @@
          url('../fonts/Telefonica/Cap/TelefonicaCapWeb-Regular.ttf') format('truetype'),
          url('../fonts/Telefonica/Cap/TelefonicaCapWeb-Regular.svg#webfont') format('svg');
 }
-@font-face{ 
+@font-face{
     font-family: 'Telefonica-Cap-Regular';
     src: url('../fonts/Telefonica/CapRegular/telefonicacap-regular-webfont.eot');
     src: url('../fonts/Telefonica/CapRegular/telefonicacap-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -239,7 +239,26 @@ textarea {
     opacity: 1
 }
 
-@media (max-width: 768px) {
+.sombraMob{
+  margin-left: -30px;
+  max-width: 155px;
+}
+.sombraDesk{
+  margin-left: -150px;
+  max-width: 290px;
+}
+
+.logoDesk{
+  width: 40%;
+    margin: 10px 0 0 30px;
+}
+
+.logoMobile{
+  width: 40%;
+    margin: 10px 0 0 10px;
+}
+
+@media (max-width: 769px) {
     .count {
         font-size: 35px!important;
         position: absolute;
@@ -266,6 +285,11 @@ textarea {
     label {
         font-size: 16px!important
     }
+    .sombraDesk{
+      margin-left: -50px;
+      max-width: 290px;
+    }
+
 }
 
 @media (min-width: 769px) and (max-width: 980px) {
@@ -276,14 +300,19 @@ textarea {
     label {
         font-size: 20px!important
     }
+
 }
 
-@media (min-width: 981px) {
+@media (min-width: 981px) and (max-width: 1025px) {
     h1 {
         font-size: 48px!important
     }
     p,
     label {
         font-size: 24px!important
+    }
+    .sombraDesk{
+      margin-left: -50px;
+      max-width: 290px;
     }
 }
