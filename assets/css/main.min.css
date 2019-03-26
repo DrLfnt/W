@@ -309,7 +309,7 @@ textarea {
 
 }
 
-@media (min-width: 981px) and (max-width: 1025px) {
+@media (min-width: 981px) and (max-width: 1040px) {
     h1 {
         font-size: 48px!important
     }
@@ -319,6 +319,34 @@ textarea {
     }
     .sombraDesk{
       margin-left: -50px;
+      max-width: 290px;
+    }
+}
+
+@media (min-width: 1041px) {
+    h1 {
+        font-size: 48px!important
+    }
+    p,
+    label {
+        font-size: 24px!important
+    }
+    .sombraDesk{
+      margin-left: -50px;
+      max-width: 290px;
+    }
+}
+
+@media (min-width: 1240px) {
+    h1 {
+        font-size: 48px!important
+    }
+    p,
+    label {
+        font-size: 24px!important
+    }
+    .sombraDesk{
+      margin-left: -150px;
       max-width: 290px;
     }
 }
