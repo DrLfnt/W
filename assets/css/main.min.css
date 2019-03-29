@@ -109,6 +109,11 @@ body {
     min-height: 100%;
 }
 
+.esquinado{
+  position: absolute;
+  right: 50px;
+}
+
 .verdeMovistar {
     color: #5bc500;
 }
@@ -268,8 +273,8 @@ textarea {
 @media (max-width: 769px) {
     .count {
         font-size: 35px!important;
-        position: absolute;
-        top: -500px
+        top: 0;
+        right: 0;
     }
     .homeText {
         position: absolute;
@@ -314,5 +319,25 @@ textarea {
     p,
     label {
         font-size: 24px!important
+    }
+}
+
+@media (min-width: 2560px){
+    h1 {
+        font-size: 56px!important
+    }
+    p,
+    label {
+        font-size: 28px!important
+    }
+    .count{
+        font-size: 70px!important
+    }
+    .CalltoAction{
+        width: 200px;
+    }
+    .palabra{
+        right: 200px;
+        position: relative;
     }
 }
