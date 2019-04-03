@@ -102,6 +102,17 @@
 				slidesColor: ['#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0'], // Bootstrap
 				anchors: ['lenguas', 'Nduchanii', 'Tikuva', 'Tletepet', 'Aakabookin', 'Peek', 'Nanaii', 'Mubu', 'Soljiaru', 'Dyebe', 'Taan', 'Napaloa', 'Reje', 'Nahtaanahotoch', 'Hutzilli', 'Chukwa', 'Tempitzoliztli', 'Cheeh', 'Viko', 'Rajna', 'Machiyotl'],
 				menu: '#menu',
+				afterLoad: function(origin, destination, direction){
+					var url = window.location.toString();
+					var begin = url.indexOf('#');
+					var end = url.length;
+					var section = url.substr(begin, end);
+					dataLayer.push({
+						'event' : 'evScroll',  //Static data
+						'nameSection' : section,  //Dynamic data
+						'btnSelect' : window.location,  //Dynamic data
+					 });				
+				},
 				onLeave: function(index, nextIndex, direction) {
 					$isAnimatedZoomInUpSlow.removeClass('animated zoomInUp slow');
 					$isAnimatedDelay1sFadeInUpBigSlow.removeClass('animated delay-1s fadeInUpBig slow');
