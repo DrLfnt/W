@@ -102,7 +102,7 @@
 				slidesColor: ['#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0', '#5bc500', '#00a9e0'], // Bootstrap
 				anchors: ['lenguas', 'Nduchanii', 'Tikuva', 'Tletepet', 'Aakabookin', 'Peek', 'Nanaii', 'Mubu', 'Soljiaru', 'Dyebe', 'Taan', 'Napaloa', 'Reje', 'Nahtaanahotoch', 'Hutzilli', 'Chukwa', 'Tempitzoliztli', 'Cheeh', 'Viko', 'Rajna', 'Machiyotl'],
 				menu: '#menu',
-				afterLoad: function(origin, destination, direction){
+				afterLoad: function(index, nextIndex, direction){
 					var url = window.location.toString();
 					var begin = url.indexOf('#');
 					var end = url.length;
