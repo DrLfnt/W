@@ -211,7 +211,7 @@ body {
 .palabra {
     z-index: 5;
     border-radius: 2px;
-    padding: 20px;
+    padding: 0px;
     margin-top: 80%;
 }
 
@@ -297,6 +297,10 @@ textarea {
     p,
     label {
         font-size: 16px!important
+    }
+
+    .palabraTres{
+      text-shadow: 3px 2px 2px white, 0 0 27px white, 0 0 9px white, -1px -1px 2px white;
     }
 
 }

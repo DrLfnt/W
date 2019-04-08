@@ -1,7 +1,6 @@
 .section {
     text-align: center
 }
-#section0,
 #section1,
 #section2,
 #section3,
@@ -27,9 +26,7 @@
     background-repeat: no-repeat;
     background-position: bottom left;
 }
-#section0 {
-    background-image: url(../img/palabras/desktop/00-palabras-desktop.jpg)
-}
+
 #section1 {
     background-image: url(../img/permanents/caja-de-texto-desktop-palabras-vivas.png),url(../img/palabras/desktop/01-palabras-mar-desktop.jpg) ;
 }
@@ -90,8 +87,15 @@
 #section20 {
     background-image: url(../img/permanents/caja-de-texto-desktop-palabras-vivas.png),url(../img/palabras/desktop/20-palabras-senal-desktop.jpg);
 }
+
+#section0 {
+    background-image: url(../img/palabras/desktop/00-palabras-desktop.jpg),
+    background-size: 100%, cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
 @media (max-width: 769px) {
-    #section0,
     #section1,
     #section2,
     #section3,
@@ -116,9 +120,6 @@
         background-size: 100% 55%, cover;
         background-repeat: no-repeat;
         background-position: bottom left;
-    }
-    #section0 {
-        background-image: url(../img/palabras/mobile/00-palabras-mobile.jpg)
     }
     #section1 {
         background-image: url(../img/permanents/caja-de-texto-mobile-palabras-vivas.png),url(../img/palabras/mobile/01-palabras-mar-mobile.jpg)
@@ -179,6 +180,13 @@
     }
     #section20 {
         background-image: url(../img/permanents/caja-de-texto-mobile-palabras-vivas.png),url(../img/palabras/mobile/20-palabras-senal-mobile.jpg);
+    }
+
+    #section0 {
+        background-size: 100%, cover;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-image: url(../img/palabras/mobile/00-palabras-mobile.jpg)
     }
 }
 .section .bg-content {
