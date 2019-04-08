@@ -162,7 +162,7 @@ body {
 
 .homeText {
     line-height: 1;
-    text-align: -webkit-left
+    text-align: left
 }
 
 .homeText h1 {
@@ -179,12 +179,12 @@ body {
 }
 
 .shareCenter {
-    text-align: -webkit-center;
+    text-align: center;
     z-index: 999999;
 }
 
 .shareRight {
-    text-align: -webkit-right
+    text-align: right
 }
 
 .shared {
