@@ -24,7 +24,7 @@
 .slide {
     background-size: 60% 55%, cover;
     background-repeat: no-repeat;
-    background-position: bottom left, top center;
+    background-position: bottom left;
 }
 
 #section1 {
@@ -92,7 +92,7 @@
     background-image: url(../img/palabras/desktop/00-palabras-desktop.jpg),
     background-size: 100%, cover;
     background-repeat: no-repeat;
-    background-position: bottom left, top center;
+    background-position: bottom left;
 }
 
 @media (max-width: 769px) {
@@ -119,7 +119,7 @@
     .slide {
         background-size: 100% 55%, cover;
         background-repeat: no-repeat;
-        background-position: bottom left, top center;
+        background-position: bottom left;
     }
     #section1 {
         background-image: url(../img/permanents/caja-de-texto-mobile-palabras-vivas.png),url(../img/palabras/mobile/01-palabras-mar-mobile.jpg)
@@ -185,7 +185,7 @@
     #section0 {
         background-size: 100%, cover;
         background-repeat: no-repeat;
-        background-position: bottom left, top center;
+        background-position: bottom left;
         background-image: url(../img/palabras/mobile/00-palabras-mobile.jpg)
     }
 }
