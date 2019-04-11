@@ -3,29 +3,35 @@
 }
 #section1,
 #section2,
-#section3,
 #section4,
-#section5,
 #section6,
-#section7,
 #section8,
 #section9,
 #section10,
-#section11,
 #section12,
 #section13,
 #section14,
-#section15,
-#section16,
-#section17,
 #section18,
 #section19,
-#section20,
 .slide {
     background-size: 60% 55%, cover;
     background-repeat: no-repeat;
     background-position: bottom left;
 }
+
+#section3,
+#section5,
+#section7,
+#section11,
+#section15,
+#section16,
+#section17,
+#section20 {
+    background-size: 60% 55%, cover;
+    background-repeat: no-repeat;
+    background-position: bottom left, top center;
+}
+
 
 #section1 {
     background-image: url(../img/permanents/caja-de-texto-desktop-palabras-vivas.png),url(../img/palabras/desktop/01-palabras-mar-desktop.jpg) ;
@@ -98,29 +104,35 @@
 @media (max-width: 769px) {
     #section1,
     #section2,
-    #section3,
     #section4,
-    #section5,
     #section6,
-    #section7,
     #section8,
     #section9,
     #section10,
-    #section11,
     #section12,
     #section13,
     #section14,
-    #section15,
-    #section16,
-    #section17,
     #section18,
     #section19,
-    #section20,
     .slide {
         background-size: 100% 55%, cover;
         background-repeat: no-repeat;
         background-position: bottom left;
     }
+    #section3,
+    #section5,
+    #section7,
+    #section11,
+    #section15,
+    #section16,
+    #section17,
+    #section20 {
+        background-size: 100% 55%, cover;
+        background-repeat: no-repeat;
+        background-position: bottom left, top center;
+    }
+
+
     #section1 {
         background-image: url(../img/permanents/caja-de-texto-mobile-palabras-vivas.png),url(../img/palabras/mobile/01-palabras-mar-mobile.jpg)
     }
