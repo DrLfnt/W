@@ -277,13 +277,23 @@ textarea {
         right: 0;
     }
     .homeText {
+        background-size: 100%, cover;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        line-height: 1;
+        text-align: left;
+        background-image: url(../img/permanents/caja-de-texto-mobile-palabras-vivas.png);
         position: absolute;
-        top: 110px;
-        text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white, -1px -1px 2px white;
+        /* top: 110px; */
+        left: 0;
+        bottom: 0;
+        height: 337px;
+        /* text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white, -1px -1px 2px white; */
     }
     .homeText h1 {
         font-size: 16px!important;
-        font-weight: 600
+        font-weight: 600;
+        padding-top: 46px;
     }
     .homeText p {
         font-size: 15px!important
