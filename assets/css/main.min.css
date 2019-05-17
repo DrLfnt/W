@@ -277,9 +277,9 @@ textarea {
         right: 0;
     }
     .homeText {
-        background-size: 100%, cover;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: bottom left;
+        /* background-position: bottom left; */
         line-height: 1;
         text-align: left;
         background-image: url(../img/permanents/caja-de-texto-mobile-palabras-vivas.png);
@@ -287,7 +287,8 @@ textarea {
         /* top: 110px; */
         left: 0;
         bottom: 0;
-        height: 337px;
+        height: 60%;
+        padding-top: 4%;
         /* text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white, -1px -1px 2px white; */
     }
     .homeText h1 {
